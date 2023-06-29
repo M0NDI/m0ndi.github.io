@@ -19,7 +19,7 @@ export const FetchMovies = async (searchTerm) => {
   while (currentPage <= totalPages) {
     const response = await axios.get(`${BASE_URL}/search/movie?`, {
       headers: {
-        Authorization: BEARER,
+        Authorization: process.env.REACT_APP_BEARER_TOKEN,
       },
       params: {
         api_key: process.env.REACT_APP_API_KEY,

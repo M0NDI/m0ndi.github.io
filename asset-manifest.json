@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mondi-movie-react/static/css/main.1dde4775.css",
+    "main.js": "/mondi-movie-react/static/js/main.b1a6a7bb.js",
+    "static/media/mondi-logo-white-outline.png": "/mondi-movie-react/static/media/mondi-logo-white-outline.2c3a3187ae8f6f6b1899.png",
+    "index.html": "/mondi-movie-react/index.html",
+    "main.1dde4775.css.map": "/mondi-movie-react/static/css/main.1dde4775.css.map",
+    "main.b1a6a7bb.js.map": "/mondi-movie-react/static/js/main.b1a6a7bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dde4775.css",
+    "static/js/main.b1a6a7bb.js"
+  ]
+}

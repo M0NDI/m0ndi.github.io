@@ -3,11 +3,12 @@ import axios from "axios";
 /* API CALLS FROM TheMovieDatabase API - https://www.themoviedb.org */
 
 /* 
-  TMDB base url and bearer access token. BEARER and API_KEY also stored
+  TMDB base url and bearer access token. BEARER and API_KEY stored
+  in .env file.
 */
 const BASE_URL = "https://api.themoviedb.org/3";
-const BEARER = process.env.REACT_APP_BEARER_TOKEN;
-const API_KEY = process.env.REACT_APP_API_KEY
+// const BEARER = process.env.REACT_APP_BEARER_TOKEN;
+// const API_KEY = process.env.REACT_APP_API_KEY
 
 // Fetch movies based on user entered searchTerm. Return all page results.
 export const FetchMovies = async (searchTerm) => {

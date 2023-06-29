@@ -1,0 +1,41 @@
+.body {
+  scroll-behavior: smooth;
+}
+
+.all_movies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.all_movies__movie {
+  height: 100%;
+}
+
+.all_movies__movie img {
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+  width: 25rem;
+  height: 35rem;
+}
+
+.hovered-details  {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 35rem;
+  transition-duration: 600ms;
+}
+
+.hovered-details .no-details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 25rem;
+  height: 34rem;
+  color: rgb(67, 102, 96);
+}

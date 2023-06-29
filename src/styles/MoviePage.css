@@ -1,0 +1,151 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.movie-overviews {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 50rem;
+    margin-bottom: 2rem;
+    font-size: large;
+    font-weight: light;
+}
+
+.poster .user-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    background-color: rgb(67, 102, 96);
+    color: white;
+    border-radius: 1rem;
+}
+
+.movie-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 20rem;
+    max-width: 35rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.movie-poster h1 {
+    text-align: center;
+    font-size:xx-large;
+    color: rgb(67, 102, 96);
+    font-weight: bold;
+}
+
+.movie-poster h3 {
+    text-align: center;
+}
+
+.movie-poster img {
+    border-radius: 1rem;
+}
+
+.actors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.actor-character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.5rem;
+    width: 6.5rem;
+    font-size: smaller;
+    margin: 0.5rem 0.5rem 0.5 0.5rem;
+}
+
+.actor-photo {
+    display: flex;
+    height: 10rem;
+    min-width: 5rem;
+    border-radius: 1rem;
+    margin: 3.5rem 0.5rem 0 0.5rem;
+}
+
+.actor-name {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    font-weight: bold;
+    width: 6.75rem;
+    height: 2.5rem;
+    text-align: center;
+    color: rgb(67, 102, 96);
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.trailer-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 9rem;
+    margin-top: 5rem;
+}
+
+.overview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-header {
+    margin-bottom: 2rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.cast-header {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.no-trailer {
+    margin: 5rem;
+}
+
+.movie-trailer {
+    margin: 1rem;
+}
+
+.runtime {
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+    margin: 0.5rem;
+}

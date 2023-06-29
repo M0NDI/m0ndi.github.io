@@ -1,0 +1,27 @@
+.basic-details-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  height: 30rem;
+  width: 20rem;
+  color: rgb(67, 102, 96);
+  font-weight: bolder;
+  font-size: smaller;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.basic-details-card__title {
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.basic-details-card__movie-score {
+  margin-top: 1rem;
+  font-size: large;
+  outline: 2px solid rgb(67, 102, 96);
+}

@@ -1,0 +1,64 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.movie {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 2rem;
+  width: 22rem;
+  height: 31.5rem;
+  color: rgba(67, 102, 96, 1);
+  font-weight: 1000;
+  text-align: center;
+  transition-duration: 600ms;
+}
+
+.movie-score {
+  width: 21rem;
+  outline: 2px solid rgb(67, 102, 96);
+  text-align: center;
+  font-size: large;
+  margin: 1.5rem;
+}
+
+.movie-date {
+  margin-bottom: 3rem;
+  font-weight:400;
+  font-size: small;
+}
+
+.movie-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  height: 5rem;
+  font-size: large;
+  margin: 1rem;
+}
+
+.movie-overview {
+  font-size: small;
+  font-weight:bolder;
+}
+
+.movie-image img {
+  border-radius: 1rem;
+  width: 25rem;
+  height: 35rem;
+  margin: 0.5rem;
+}

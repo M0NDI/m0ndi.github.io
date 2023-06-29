@@ -40,11 +40,11 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "background-color": "rgba(67, 102, 96, 0.7)",
+                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
                   color: "white",
                   fontWeight: "900",
                 }
-                : { "background-color": "rgba(211, 211, 211, 0.3)" }
+                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
               resetPageToInitialState(); 
@@ -59,11 +59,11 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "background-color": "rgba(67, 102, 96, 0.7)",
+                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
                   color: "white",
                   fontWeight: "900",
                 }
-                : { "background-color": "rgba(211, 211, 211, 0.3)" }
+                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
               resetPageToInitialState(); 
@@ -78,11 +78,11 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "background-color": "rgba(67, 102, 96, 0.7)",
+                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
                   color: "white",
                   fontWeight: "900",
                 }
-                : { "background-color": "rgba(211, 211, 211, 0.3)" }
+                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
               resetPageToInitialState(); 

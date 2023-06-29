@@ -32,10 +32,11 @@ export const FetchMovies = async (searchTerm) => {
     totalPages = response.data.total_pages;
     currentPage++;
   }
+  console.log(results)
 
   // Sort the results by release date in descending order.
   const sortedResults = results.sort((a, b) => {
-    return new Date(b.release_date) - new Date(a.release_date);
+    return new Date(b.popularity) - new Date(a.popularity);
   });
   return sortedResults;
 };

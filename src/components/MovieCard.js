@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import MovieDetails from "./MovieDetails";
 
 const MovieCard = ({ searchedMovie }) => {
+  /* 
+    hoveredMovie will keep track of the movie that is currently being hovered. This data will be used for
+    styling purposes. e.g. hovered movie image poster will have lower opacity.
+  */
   const [hoveredMovie, setHoveredMovie] = useState(null);
 
   const imagePath =

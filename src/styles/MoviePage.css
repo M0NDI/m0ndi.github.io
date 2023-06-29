@@ -32,6 +32,10 @@
     border-radius: 1rem;
 }
 
+.poster img {
+    margin: 2rem;
+}
+
 .movie-poster {
     display: flex;
     flex-direction: column;

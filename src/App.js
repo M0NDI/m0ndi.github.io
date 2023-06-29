@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   // Store searched movie data
-  const [searchedMoviesArr, setSearchedMoviesArr] = useState([]); 
+  const [searchedMoviesArr, setSearchedMoviesArr] = useState([]);
   
   // Variable used to determine whether back to top of page button is shown or not
   const [showBackToTop, setShowBackToTop] = useState(false); 
@@ -63,6 +63,7 @@ function App() {
       <NavBar
         onSubmit={handleSubmit}
         setIsSearchSubmitted={setIsSearchSubmitted}
+        setSearchedMoviesArr={setSearchedMoviesArr}
       />
       <div>
         <Routes>

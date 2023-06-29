@@ -10,9 +10,12 @@ import MoviePage from "./components/MoviePage";
 import "./App.css";
 
 function App() {
-  const [searchedMoviesArr, setSearchedMoviesArr] = useState([]); // Store searched movie data
-  const [showBackToTop, setShowBackToTop] = useState(false); // Variable used to determine whether back to top of page button is shown or not
-  const [isSearchSubmitted, setIsSearchSubmitted] = useState(false);
+  // Store searched movie data
+  const [searchedMoviesArr, setSearchedMoviesArr] = useState([]); 
+  
+  // Variable used to determine whether back to top of page button is shown or not
+  const [showBackToTop, setShowBackToTop] = useState(false); 
+  const [isSearchSubmitted, setIsSearchSubmitted] = useState(false); 
   // const [genresList, setGenresList] = useState([]);
 
   // -----------------

@@ -32,10 +32,6 @@
     border-radius: 1rem;
 }
 
-.poster img {
-    margin: 2rem;
-}
-
 .movie-poster {
     display: flex;
     flex-direction: column;
@@ -43,7 +39,6 @@
     justify-content: center;
     min-width: 20rem;
     max-width: 35rem;
-    margin-left: 8rem;
     margin-top: 1rem;
 }
 

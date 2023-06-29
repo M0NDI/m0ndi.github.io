@@ -46,7 +46,10 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
                 }
                 : { "background-color": "rgba(211, 211, 211, 0.3)" }
             }
-            onClick={resetPageToInitialState}
+            onClick={() => {
+              resetPageToInitialState(); 
+              setIsSearchSubmitted(false); 
+            }}
           >
             Popular
           </NavLink>
@@ -62,7 +65,10 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
                 }
                 : { "background-color": "rgba(211, 211, 211, 0.3)" }
             }
-            onClick={resetPageToInitialState}
+            onClick={() => {
+              resetPageToInitialState(); 
+              setIsSearchSubmitted(false); 
+            }}
           >
             Upcoming
           </NavLink>
@@ -78,7 +84,10 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
                 }
                 : { "background-color": "rgba(211, 211, 211, 0.3)" }
             }
-            onClick={resetPageToInitialState}
+            onClick={() => {
+              resetPageToInitialState(); 
+              setIsSearchSubmitted(false); 
+            }}
           >
             Top Rated
           </NavLink>

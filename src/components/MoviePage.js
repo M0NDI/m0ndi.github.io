@@ -117,7 +117,6 @@ const MoviePage = () => {
             <p className="no-trailer">No trailer available</p>
           )}
         </div>
-
         {movieCast.cast && movieCast.cast.length > 0 ? (
           <>
             <div className="cast-header">Top Cast</div>
@@ -144,7 +143,6 @@ const MoviePage = () => {
             <p>Cast not available</p>
           </>
         )}
-        
       </div>
     </div>
   );

@@ -144,6 +144,7 @@ const MoviePage = () => {
             <p>Cast not available</p>
           </>
         )}
+        
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
 .movie-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -39,7 +40,9 @@
     justify-content: center;
     min-width: 20rem;
     max-width: 35rem;
-    margin-top: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
 }
 
 .movie-poster h1 {
@@ -60,22 +63,26 @@
 .actors {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    width: 55rem;
+    height: 16.5rem;
 }
 
 .actor-character {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    margin-left: 0.5rem;
+    margin-left: 0.6rem;
     width: 6.5rem;
     font-size: smaller;
-    margin: 0.5rem 0.5rem 0.5 0.5rem;
 }
 
 .actor-photo {
     display: flex;
+    flex-direction: column;
     height: 10rem;
     min-width: 5rem;
     border-radius: 1rem;
@@ -110,7 +117,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 9rem;
+    margin: 6rem;
     margin-top: 5rem;
 }
 

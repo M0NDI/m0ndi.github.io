@@ -25,6 +25,7 @@
   margin-top: 1rem;
   font-size: large;
   outline: 2px solid rgb(67, 102, 96);
+  width: 21rem;
 }
 
 .basic-details-card__overview {

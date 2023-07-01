@@ -39,7 +39,7 @@ const MostPopular = () => {
   const handleMouseLeave = () => {
     setHoveredMovie(null);
   };
-  
+
   useEffect(() => {
     getMostPopular();
   }, [currentPage]);

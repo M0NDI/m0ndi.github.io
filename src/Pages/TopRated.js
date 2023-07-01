@@ -20,7 +20,7 @@ const TopRated = () => {
     const nextPageResults = await FetchTopRated(currentPage + 1);
     setTopRated(nextPageResults);
   };
-  
+
   // if statement used here to prevent user from going back another page (to page 0, -1 and so on) if already on page 1.
   const getPreviousPage = async () => {
     if (currentPage === 1) {

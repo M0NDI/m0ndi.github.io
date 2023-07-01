@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/MovieDetails.css"
+import "../styles/MovieDetails.css";
 
 const MovieDetails = ({ searchedMovie }) => {
   const shortenedOverview =

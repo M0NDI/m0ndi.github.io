@@ -11,6 +11,7 @@ const SearchForm = ({ onSubmit, setIsSearchSubmitted }) => {
     event.preventDefault();
     onSubmit(searchTerm);
     setIsSearchSubmitted(true);
+    setSearchTerm("");
   };
 
   return (

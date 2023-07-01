@@ -5,8 +5,11 @@ import { useLocation, NavLink } from "react-router-dom";
 import SearchForm from "./SearchForm";
 import mondiLogo from "../images/mondi-logo-white-outline.png";
 
-export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr }) => {
-
+export const NavBar = ({
+  onSubmit,
+  setIsSearchSubmitted,
+  setSearchedMoviesArr,
+}) => {
   const location = useLocation();
   const hideSearchBar = location.pathname.startsWith("/movie/");
 
@@ -18,7 +21,7 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
   return (
     <nav className="navbar">
       <div className="mondi-logo-container">
-        <NavLink to={"/"} >
+        <NavLink to={"/"}>
           <div className="mondi-logo">
             <img src={mondiLogo} alt="logo" />
           </div>
@@ -40,15 +43,15 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
-                  color: "white",
-                  fontWeight: "900",
-                }
-                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
+                    backgroundColor: "rgba(67, 102, 96, 0.7)",
+                    color: "white",
+                    fontWeight: "900",
+                  }
+                : { backgroundColor: "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
-              resetPageToInitialState(); 
-              setIsSearchSubmitted(false); 
+              resetPageToInitialState();
+              setIsSearchSubmitted(false);
             }}
           >
             Popular
@@ -59,15 +62,15 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
-                  color: "white",
-                  fontWeight: "900",
-                }
-                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
+                    backgroundColor: "rgba(67, 102, 96, 0.7)",
+                    color: "white",
+                    fontWeight: "900",
+                  }
+                : { backgroundColor: "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
-              resetPageToInitialState(); 
-              setIsSearchSubmitted(false); 
+              resetPageToInitialState();
+              setIsSearchSubmitted(false);
             }}
           >
             Upcoming
@@ -78,15 +81,15 @@ export const NavBar = ({ onSubmit, setIsSearchSubmitted, setSearchedMoviesArr })
             style={({ isActive }) =>
               isActive
                 ? {
-                  "backgroundColor": "rgba(67, 102, 96, 0.7)",
-                  color: "white",
-                  fontWeight: "900",
-                }
-                : { "backgroundColor": "rgba(211, 211, 211, 0.3)" }
+                    backgroundColor: "rgba(67, 102, 96, 0.7)",
+                    color: "white",
+                    fontWeight: "900",
+                  }
+                : { backgroundColor: "rgba(211, 211, 211, 0.3)" }
             }
             onClick={() => {
-              resetPageToInitialState(); 
-              setIsSearchSubmitted(false); 
+              resetPageToInitialState();
+              setIsSearchSubmitted(false);
             }}
           >
             Top Rated

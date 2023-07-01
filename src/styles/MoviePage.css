@@ -58,6 +58,7 @@
 
 .movie-poster img {
     border-radius: 1rem;
+    width: 28rem;
 }
 
 .actors {
@@ -132,13 +133,21 @@
     margin-bottom: 2rem;
     font-size: x-large;
     font-weight: bold;
+    color: rgb(67, 102, 96);
 }
 
 .cast-header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     font-size: x-large;
     font-weight: bold;
+}
+
+.cast p {
+    text-align: center;
+    width: 8rem;
+    margin-top: 2rem;
+    color: orange;
 }
 
 .no-trailer {

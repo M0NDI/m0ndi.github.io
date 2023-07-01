@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const MovieDetails = ({ searchedMovie }) => {
   const shortenedOverview =
-    searchedMovie.overview.length > 900
-      ? searchedMovie.overview.substring(0, 900) + "..."
+    searchedMovie.overview.length > 800
+      ? searchedMovie.overview.substring(0, 800) + "..."
       : searchedMovie.overview;
 
   return (

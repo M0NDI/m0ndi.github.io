@@ -66,8 +66,9 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 55rem;
-    height: 16.5rem;
+    width: 63rem;
+    height: 23rem;
+    outline: 2px solid red;
 }
 
 .actor-character {
@@ -76,34 +77,33 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin-left: 0.6rem;
-    width: 6.5rem;
+    margin-left: 0.5rem;
+    width: 9.5rem;
+    height: 4rem;
     font-size: smaller;
 }
 
 .actor-photo {
     display: flex;
-    flex-direction: column;
-    height: 10rem;
+    height: 14rem;
     min-width: 5rem;
     border-radius: 1rem;
-    margin: 3.5rem 0.5rem 0 0.5rem;
+    margin: 5rem 0.5rem 0 0.5rem;
 }
 
 .actor-name {
     display: flex;
     position: absolute;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: smaller;
     font-weight: bold;
-    width: 6.75rem;
-    height: 2.5rem;
+    width: 9.5rem;
+    margin-left: 0.5rem;
+    height: 5rem;
     text-align: center;
     color: rgb(67, 102, 96);
     background-color: transparent;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
 }
 
 .loading {
@@ -141,6 +141,7 @@
     justify-content: center;
     font-size: x-large;
     font-weight: bold;
+    margin: 2rem;
 }
 
 .cast p {

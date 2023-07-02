@@ -11,7 +11,7 @@ body {
   position: absolute; /*ie6 */
   bottom: 0;
   z-index: 999;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(67, 102, 96);
   border-radius: 4rem;
   margin: 0.5rem;
 }
@@ -30,10 +30,11 @@ body {
   margin: 1rem;
   height: 2rem;
   padding: 0.5rem;
+  color: white;
 }
 
 .prev-page:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: lightgray;
   transition-duration: 400ms;
 }
 
@@ -48,10 +49,11 @@ body {
   margin: 1rem;
   height: 2rem;
   padding: 0.5rem;
+  color: white;
 }
 
 .next-page:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.1);
   transition-duration: 400ms;
 }
 
@@ -68,6 +70,6 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 1rem;
-  background-color: rgba(67, 102, 96, 0.7);
-  color: white;
+  background-color: white;
+  color: rgb(67, 102, 96);
 }

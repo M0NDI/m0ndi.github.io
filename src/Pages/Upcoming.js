@@ -58,7 +58,7 @@ const Upcoming = () => {
   });
 
   return (
-    <>
+    <div className="page-container">
       {currentPage !== upcoming.total_pages ? (
         <Pagination
           getNextPage={getNextPage}
@@ -118,7 +118,7 @@ const Upcoming = () => {
         getPreviousPage={getPreviousPage}
         currentPage={currentPage}
       />
-    </>
+    </div>
   );
 };
 

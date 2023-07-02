@@ -1,5 +1,11 @@
-.body {
+html, body {
   scroll-behavior: smooth;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .all_movies {
@@ -39,3 +45,21 @@
   height: 34rem;
   color: rgb(67, 102, 96);
 }
+
+/* @media (min-width: 375px) {
+  .page-container {
+    width: 177%;
+  }
+}
+
+@media (min-width: 320px) {
+  .page-container {
+    width: 177%;
+  }
+}
+
+@media (min-width: 3668px) {
+  .page-container {
+    width: 100%;
+  }
+} */

@@ -59,7 +59,7 @@ const MostPopular = () => {
   });
 
   return (
-    <>
+    <div className="page-container">
       {currentPage !== popular.total_pages ? (
         <Pagination
           getNextPage={getNextPage}
@@ -114,12 +114,7 @@ const MostPopular = () => {
             )
         )}
       </div>
-      <Pagination
-        getNextPage={getNextPage}
-        getPreviousPage={getPreviousPage}
-        currentPage={currentPage}
-      />
-    </>
+    </div>
   );
 };
 

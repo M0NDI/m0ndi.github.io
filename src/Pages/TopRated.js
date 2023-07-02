@@ -59,7 +59,7 @@ const TopRated = () => {
   });
 
   return (
-    <>
+    <div className="page-container">
       {currentPage !== topRated.total_pages ? (
         <Pagination
           getNextPage={getNextPage}
@@ -119,7 +119,7 @@ const TopRated = () => {
         getPreviousPage={getPreviousPage}
         currentPage={currentPage}
       />
-    </>
+    </div>
   );
 };
 

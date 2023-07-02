@@ -14,23 +14,22 @@ body {
   background-color: rgb(243, 243, 243);
   border-radius: 4rem;
   margin: 0.5rem;
-  height: 4.5rem;
 }
 
 .page {
   display: flex;
   justify-content: center;
-  margin: 0.5rem;
+  align-items: center;
+  height: 4rem;
 }
 
 .prev-page {
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem;
   margin: 1rem;
-  margin-top: 1.75rem;
   height: 2rem;
+  padding: 0.5rem;
 }
 
 .prev-page:hover {
@@ -46,14 +45,13 @@ body {
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem;
   margin: 1rem;
-  margin-top: 1.75rem;
   height: 2rem;
+  padding: 0.5rem;
 }
 
 .next-page:hover {
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
   transition-duration: 400ms;
 }
 
@@ -64,10 +62,9 @@ body {
 .page-number {
   display: flex;
   align-items: center;
-  font-weight: bolder;
   justify-content: center;
+  font-weight: bolder;
   margin: 1rem;
-  padding: 1rem;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 1rem;

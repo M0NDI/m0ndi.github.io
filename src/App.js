@@ -65,7 +65,7 @@ function App() {
         setIsSearchSubmitted={setIsSearchSubmitted}
         setSearchedMoviesArr={setSearchedMoviesArr}
       />
-      <div>
+      <div id="routes">
         <Routes>
           {isSearchSubmitted ? (
             <>
@@ -103,7 +103,7 @@ function App() {
         className={`back-to-top ${showBackToTop ? "show-back-to-top" : ""}`}
         onClick={scrollToTop}
       >
-        &#8679;
+        &#8673;
       </button>
     </div>
   );

@@ -69,7 +69,8 @@ body {
   margin: 1rem;
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 1rem;
-  background-color: white;
-  color: rgb(67, 102, 96);
+  border-radius: 4rem;
+  background-color: rgb(67, 102, 96);
+  color: white;
+  outline: 2px solid white;
 }

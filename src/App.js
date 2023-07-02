@@ -103,7 +103,7 @@ function App() {
         className={`back-to-top ${showBackToTop ? "show-back-to-top" : ""}`}
         onClick={scrollToTop}
       >
-        &#8673;
+        &#8679;
       </button>
     </div>
   );

@@ -144,10 +144,11 @@
 }
 
 .cast p {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    width: 8rem;
+    width: 15rem;
     margin-top: 2rem;
-    color: orange;
 }
 
 .no-trailer {
@@ -164,3 +165,4 @@
     font-size:x-large;
     margin: 0.5rem;
 }
+

@@ -61,21 +61,6 @@ const MostPopular = () => {
 
   return (
     <div className="page-container">
-      {currentPage !== popular.total_pages ? (
-        <Pagination
-          getNextPage={getNextPage}
-          getPreviousPage={getPreviousPage}
-          currentPage={currentPage}
-        />
-      ) : (
-        <div className="page">
-          <button className="prev-page" onClick={getPreviousPage}>
-            Back
-          </button>
-          <div className="page-number">{currentPage}</div>
-          <></>
-        </div>
-      )}
       <div className="all_movies">
         {popular.results?.map(
           (movie) =>
@@ -115,6 +100,20 @@ const MostPopular = () => {
             )
         )}
       </div>
+      {currentPage < popular.total_pages ? (
+        <Pagination
+          getNextPage={getNextPage}
+          getPreviousPage={getPreviousPage}
+          currentPage={currentPage}
+        />
+      ) : (
+        <div className="conditional-pages">
+          <button className="conditional-prev" onClick={getPreviousPage}>
+            Back
+          </button>
+          <div className="conditional-page-number">{currentPage}</div>
+        </div>
+      )}
     </div>
   );
 };

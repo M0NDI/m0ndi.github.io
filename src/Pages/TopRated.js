@@ -60,21 +60,6 @@ const TopRated = () => {
 
   return (
     <div className="page-container">
-      {currentPage !== topRated.total_pages ? (
-        <Pagination
-          getNextPage={getNextPage}
-          getPreviousPage={getPreviousPage}
-          currentPage={currentPage}
-        />
-      ) : (
-        <div className="page">
-          <button className="prev-page" onClick={getPreviousPage}>
-            Back
-          </button>
-          <div className="page-number">{currentPage}</div>
-          <></>
-        </div>
-      )}
       <div className="all_movies">
         {topRated.results?.map(
           (movie) =>
@@ -114,11 +99,20 @@ const TopRated = () => {
             )
         )}
       </div>
-      <Pagination
-        getNextPage={getNextPage}
-        getPreviousPage={getPreviousPage}
-        currentPage={currentPage}
-      />
+      {currentPage === 0 || currentPage < topRated.total_pages ? (
+        <Pagination
+          getNextPage={getNextPage}
+          getPreviousPage={getPreviousPage}
+          currentPage={currentPage}
+        />
+      ) : (
+        <div className="conditional-pages">
+          <button className="conditional-prev" onClick={getPreviousPage}>
+            Back
+          </button>
+          <div className="conditional-page-number">{currentPage}</div>
+        </div>
+      )}
     </div>
   );
 };

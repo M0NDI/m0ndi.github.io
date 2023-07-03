@@ -13,6 +13,7 @@ const Upcoming = () => {
   const getUpcoming = async () => {
     const upcoming = await FetchUpcoming(currentPage);
     setUpcoming(upcoming);
+    console.log(upcoming.total_pages);
   };
 
   const getNextPage = async () => {
@@ -59,21 +60,6 @@ const Upcoming = () => {
 
   return (
     <div className="page-container">
-      {currentPage !== upcoming.total_pages ? (
-        <Pagination
-          getNextPage={getNextPage}
-          getPreviousPage={getPreviousPage}
-          currentPage={currentPage}
-        />
-      ) : (
-        <div className="page">
-          <button className="prev-page" onClick={getPreviousPage}>
-            Back
-          </button>
-          <div className="page-number">{currentPage}</div>
-          <></>
-        </div>
-      )}
       <div className="all_movies">
         {upcoming.results?.map(
           (movie) =>
@@ -113,11 +99,20 @@ const Upcoming = () => {
             )
         )}
       </div>
-      <Pagination
-        getNextPage={getNextPage}
-        getPreviousPage={getPreviousPage}
-        currentPage={currentPage}
-      />
+      {currentPage < upcoming.total_pages || currentPage < 1 ? (
+        <Pagination
+          getNextPage={getNextPage}
+          getPreviousPage={getPreviousPage}
+          currentPage={currentPage}
+        />
+      ) : (
+        <div className="conditional-pages">
+          <button className="conditional-prev" onClick={getPreviousPage}>
+            Back
+          </button>
+          <div className="conditional-page-number">{currentPage}</div>
+        </div>
+      )}
     </div>
   );
 };

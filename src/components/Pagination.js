@@ -15,7 +15,11 @@ const PrevNextPage = ({
   };
 
   const showPageNumberHoverGuide = () => {
-    isPageNumberHovered ? <div>Click page number to go to page 1</div> : <></>;
+    setIsPageNumberHovered(true);
+  };
+
+  const hidePageNumberHoverGuide = () => {
+    setIsPageNumberHovered(false);
   };
 
   return (
@@ -24,7 +28,15 @@ const PrevNextPage = ({
         <button className="prev-page" onClick={getPreviousPage}>
           Back
         </button>
-        <button className="page-number" onMouseEnter={showPageNumberHoverGuide} onClick={handleResetPageNumber}>
+        <button
+          className="page-number"
+          onMouseEnter={showPageNumberHoverGuide}
+          onMouseLeave={hidePageNumberHoverGuide}
+          onClick={handleResetPageNumber}
+        >
+          <div className="page-number__hover-guide">
+            {isPageNumberHovered ? <div className="guide">Click for page 1</div> : null}
+          </div>
           {currentPage}
         </button>
         <button className="next-page" onClick={getNextPage}>

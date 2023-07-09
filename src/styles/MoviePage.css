@@ -1,168 +1,170 @@
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .movie-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.movie-overviews {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 50rem;
-    margin-bottom: 2rem;
-    font-size: large;
-    font-weight: light;
-}
-
-.poster .user-score {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    background-color: rgb(67, 102, 96);
-    color: white;
-    border-radius: 1rem;
-}
-
-.movie-poster {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 20rem;
-    max-width: 35rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    margin-top: 2rem;
-}
-
-.movie-poster h1 {
-    text-align: center;
-    font-size:xx-large;
-    color: rgb(67, 102, 96);
-    font-weight: bold;
-}
-
-.movie-poster h3 {
-    text-align: center;
-}
-
-.movie-poster img {
-    border-radius: 1rem;
-    width: 28rem;
-}
-
-.actors {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 63rem;
-    height: 23rem;
-}
-
-.actor-character {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: 0.5rem;
-    width: 9.5rem;
-    height: 4rem;
-    font-size: smaller;
-}
-
-.actor-photo {
-    display: flex;
-    height: 14rem;
-    min-width: 5rem;
-    border-radius: 1rem;
-    margin: 5rem 0.5rem 0 0.5rem;
-}
-
-.actor-name {
-    display: flex;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: smaller;
-    font-weight: bold;
-    width: 9.5rem;
-    margin-left: 0.5rem;
-    height: 5rem;
-    text-align: center;
-    color: rgb(67, 102, 96);
-    background-color: transparent;
-}
-
-.loading {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-}
-
-.trailer-embed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 6rem;
-    margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(24, 26, 27);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .overview-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overview-header {
-    margin-bottom: 2rem;
-    font-size: x-large;
-    font-weight: bold;
-    color: rgb(67, 102, 96);
+  margin-bottom: 2rem;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-overviews {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50rem;
+  margin-bottom: 2rem;
+  font-size: large;
+  font-weight: light;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.poster .user-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background-color: rgb(24, 26, 27);
+  color: white;
+  border-radius: 1rem;
+}
+
+.movie-poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 20rem;
+  max-width: 35rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-poster h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.movie-poster h3 {
+  text-align: center;
+}
+
+.movie-poster img {
+  border-radius: 1rem;
+  width: 28rem;
+}
+
+.actors {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 63rem;
+  height: 23rem;
+}
+
+.actor-character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 0.5rem;
+  width: 9.5rem;
+  height: 4rem;
+  font-size: smaller;
+}
+
+.actor-photo {
+  display: flex;
+  height: 14rem;
+  min-width: 5rem;
+  border-radius: 1rem;
+  margin: 5rem 0.5rem 0 0.5rem;
+}
+
+.actor-name {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: smaller;
+  font-weight: bold;
+  width: 9.5rem;
+  margin-left: 0.5rem;
+  height: 5rem;
+  text-align: center;
+  color: rgb(67, 102, 96);
+  background-color: transparent;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.trailer-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 6rem;
+  margin-top: 5rem;
 }
 
 .cast-header {
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: bold;
-    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 2rem;
 }
 
 .cast p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 15rem;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 15rem;
+  margin-top: 2rem;
 }
 
 .no-trailer {
-    margin: 5rem;
+  margin: 5rem;
 }
 
 .movie-trailer {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .runtime {
-    display: flex;
-    justify-content: center;
-    font-size:x-large;
-    margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  margin: 0.5rem;
 }
-

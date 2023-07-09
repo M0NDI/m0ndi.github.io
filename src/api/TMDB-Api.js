@@ -139,15 +139,15 @@ export const FetchTopRated = async (page) => {
   return response.data;
 };
 
-export const fetchMovieGenres = async () => {
-  const response = await axios.get(`${BASE_URL}/genre/movie/list`, {
-    headers: {
-      Authorization: BEARER,
-    },
-    params: {
-      api_key: API_KEY,
-    }
-  })
-  console.log(response.data)
-  return response.data;
-}
+// export const fetchMovieGenres = async () => {
+//   const response = await axios.get(`${BASE_URL}/genre/movie/list`, {
+//     headers: {
+//       Authorization: BEARER,
+//     },
+//     params: {
+//       api_key: API_KEY,
+//     }
+//   })
+//   console.log(response.data)
+//   return response.data;
+// }

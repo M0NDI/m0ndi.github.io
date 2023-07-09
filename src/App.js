@@ -16,7 +16,6 @@ function App() {
   // Variable used to determine whether back to top of page button is shown or not
   const [showBackToTop, setShowBackToTop] = useState(false); 
   const [isSearchSubmitted, setIsSearchSubmitted] = useState(false); 
-  // const [genresList, setGenresList] = useState([]);
 
   // -----------------
   const handleSubmit = async (searchTerm) => {
@@ -24,16 +23,6 @@ function App() {
     setSearchedMoviesArr(movieResults);
     setIsSearchSubmitted(true);
   };
-
-// const getAllGenres = async () => {
-//   const allGenres = await FetchGenres();
-//   setGenresList(allGenres);
-// };
-
-// useEffect(() => {
-//   getAllGenres();
-//   console.log(genresList);
-// }, [genresList]);
 
   // -----------------
   const handleScroll = () => {

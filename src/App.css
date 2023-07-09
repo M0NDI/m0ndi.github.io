@@ -1,5 +1,3 @@
-
-
 .back-to-top {
   position: fixed;
   bottom: 9px;
@@ -28,8 +26,6 @@
   transition-duration: 400ms;
 }
 
-.back-to-top:not(:hover){
+.back-to-top:not(:hover) {
   transition-duration: 400ms;
 }
-
-

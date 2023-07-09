@@ -1,3 +1,13 @@
 .movie-overview {
-    font-size: small;
+  font-size: small;
 }
+
+/* <div className="movie-details">
+      <h1 className="movie-title">{searchedMovie.title}</h1>
+      <div className="movie-date">{searchedMovie.release_date}</div>
+      <div className="movie-overview">{shortenedOverview}</div>
+      <div className="movie-score">
+        Audience score: {searchedMovie.vote_average.toFixed(1)}
+      </div>
+      <Link to={`/movie/${searchedMovie.id}`}></Link>
+    </div> */

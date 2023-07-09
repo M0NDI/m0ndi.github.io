@@ -6,7 +6,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(24, 26, 27);
 }
 
 .conditional-pages {
@@ -22,10 +22,11 @@ html, body {
   margin: 0.5rem;
 }
 
-.all_movies {
+.all_movies { 
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .all_movies__movie {

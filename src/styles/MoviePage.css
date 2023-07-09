@@ -118,7 +118,8 @@
   margin-left: 0.5rem;
   height: 5rem;
   text-align: center;
-  color: rgb(67, 102, 96);
+  text-decoration: overline;
+  color: rgb(255, 255, 255, 0.7);
   background-color: transparent;
 }
 

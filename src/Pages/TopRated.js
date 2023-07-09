@@ -104,6 +104,7 @@ const TopRated = () => {
           getNextPage={getNextPage}
           getPreviousPage={getPreviousPage}
           currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       ) : (
         <div className="conditional-pages">

@@ -97,6 +97,7 @@ export const FetchMostPopular = async (page) => {
   if (page > response.data.total_pages) {
     return [];
   }
+  console.log(response.data)
   return response.data;
 };
 

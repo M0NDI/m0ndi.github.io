@@ -32,7 +32,7 @@ const MostPopular = () => {
     setPopular(previousPageResults);
   };
 
-  // Functions to be used in "onMouseEnter" and "onMouseLeave" for movie image display details on hover effect.
+  // Functions to be used in "onMouseEnter" and "onMouseLeave" for movie image to display details on hover.
   const handleMouseEnter = (movie) => {
     setHoveredMovie(movie);
   };
@@ -105,6 +105,7 @@ const MostPopular = () => {
           getNextPage={getNextPage}
           getPreviousPage={getPreviousPage}
           currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       ) : (
         <div className="conditional-pages">

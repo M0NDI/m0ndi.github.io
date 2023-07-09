@@ -13,7 +13,6 @@ const Upcoming = () => {
   const getUpcoming = async () => {
     const upcoming = await FetchUpcoming(currentPage);
     setUpcoming(upcoming);
-    console.log(upcoming.total_pages);
   };
 
   const getNextPage = async () => {
@@ -39,6 +38,11 @@ const Upcoming = () => {
 
   const handleMouseLeave = () => {
     setHoveredMovie(null);
+  };
+
+  const handleResetPageNumber = () => {
+    setCurrentPage(1);
+    getUpcoming();
   };
 
   useEffect(() => {
@@ -104,13 +108,14 @@ const Upcoming = () => {
           getNextPage={getNextPage}
           getPreviousPage={getPreviousPage}
           currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       ) : (
         <div className="conditional-pages">
           <button className="conditional-prev" onClick={getPreviousPage}>
             Back
           </button>
-          <div className="conditional-page-number">{currentPage}</div>
+          <button className="conditional-page-number">{currentPage}</button>
         </div>
       )}
     </div>

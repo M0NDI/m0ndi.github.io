@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FetchMovieDetails } from "../api/TMDB-Api";
 import { FetchMovieCast } from "../api/TMDB-Api";
 import { FetchMovieVideos } from "../api/TMDB-Api";
-import { useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
+import SimilarMovies from "./SimilarMovies";
 import "../styles/MoviePage.css";
 
-const MoviePage = () => {
+const MoviePage = ({ genresList }) => {
   const [movieDetails, setMovieDetails] = useState(null);
   const [movieCast, setMovieCast] = useState([]);
   const [movieVideos, setMovieVideos] = useState([]);
@@ -74,10 +75,6 @@ const MoviePage = () => {
     backgroundColor = "red";
   }
 
-  console.log(movieDetails);
-  console.log(movieCast);
-  console.log(movieVideos);
-
   return (
     <div className="movie-container">
       <div className="movie-poster">
@@ -92,6 +89,11 @@ const MoviePage = () => {
             src={imagePath + movieDetails.poster_path}
             alt={movieDetails.title}
           />
+          <div className="genres">
+            {movieDetails.genres.map((genre) => {
+              return <div key={genre.id}>{genre.name}</div>;
+            })}
+          </div>
         </div>
       </div>
       <div className="trailer-embed">
@@ -143,6 +145,9 @@ const MoviePage = () => {
             <p>Cast not available</p>
           </div>
         )}
+        <div>
+          <SimilarMovies id={id}/>
+        </div>
       </div>
     </div>
   );

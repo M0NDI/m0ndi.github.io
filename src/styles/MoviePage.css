@@ -78,6 +78,13 @@
   width: 28rem;
 }
 
+.genres {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+  /* outline: 2px solid red; */
+}
+
 .actors {
   display: flex;
   justify-content: center;

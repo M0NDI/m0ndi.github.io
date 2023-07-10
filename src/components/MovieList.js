@@ -2,7 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 import "../styles/MovieList.css";
 
-const MovieList = ({ searchedMoviesArr }) => {
+const MovieList = ({ searchedMoviesArr, genresList }) => {
   const renderedMovies = searchedMoviesArr.map((searchedMovie) => {
     if (!searchedMovie.poster_path) {
       return <></>;

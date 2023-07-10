@@ -60,7 +60,7 @@ html, body {
   text-align: center;
   width: 25rem;
   height: 34rem;
-  color: white;
+  color: rgb(255, 255, 255, 0.9);
 }
 
 .conditional-prev {

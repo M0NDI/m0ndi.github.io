@@ -6,7 +6,7 @@ import "../styles/Pages.css";
 import Pagination from "../components/Pagination";
 import BasicDetailsCard from "../components/BasicDetailsCard";
 
-const MostPopular = ({ genresList }) => {
+const MostPopular = () => {
   const [popular, setPopular] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [hoveredMovie, setHoveredMovie] = useState(null);

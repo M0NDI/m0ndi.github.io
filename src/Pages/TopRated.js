@@ -5,7 +5,7 @@ import "../styles/Pages.css";
 import Pagination from "../components/Pagination";
 import BasicDetailsCard from "../components/BasicDetailsCard";
 
-const TopRated = ({ genresList }) => {
+const TopRated = () => {
   const [topRated, setTopRated] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [hoveredMovie, setHoveredMovie] = useState(null);

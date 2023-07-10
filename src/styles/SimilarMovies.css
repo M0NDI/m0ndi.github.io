@@ -1,0 +1,28 @@
+.similar-movies {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 99%;
+}
+
+.similar-movies__movie {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.similar-movies__movie img {
+    border-radius: 1rem;
+}
+
+.similar-movies__header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}

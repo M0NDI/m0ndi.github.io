@@ -146,9 +146,9 @@ const MoviePage = ({ genresList }) => {
           </div>
         )}
         <div>
-          <SimilarMovies id={id}/>
         </div>
       </div>
+      <SimilarMovies id={id}/>
     </div>
   );
 };

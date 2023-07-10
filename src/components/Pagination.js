@@ -6,7 +6,6 @@ const PrevNextPage = ({
   getPreviousPage,
   currentPage,
   setCurrentPage,
-  upcoming,
 }) => {
   const [isPageNumberHovered, setIsPageNumberHovered] = useState(false);
 

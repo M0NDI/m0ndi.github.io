@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 /* API CALLS FROM TheMovieDatabase API - https://www.themoviedb.org */
 
 /* 
@@ -149,5 +148,5 @@ export const FetchSimilarMovies = async (movieId) => {
       api_key: API_KEY,
     },
   });
-  return response.data;
+  return response.data.results;
 };

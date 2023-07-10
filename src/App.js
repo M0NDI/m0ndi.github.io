@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { FetchMovies, /* FetchGenres */ } from "./api/TMDB-Api";
+import { FetchMovies /* FetchGenres */ } from "./api/TMDB-Api";
 import { NavBar } from "./components/NavBar";
 import MovieList from "./components/MovieList";
 import MostPopular from "./Pages/MostPopular";
@@ -12,10 +12,10 @@ import "./App.css";
 function App() {
   // Store searched movie data
   const [searchedMoviesArr, setSearchedMoviesArr] = useState([]);
-  
+
   // Variable used to determine whether back to top of page button is shown or not
-  const [showBackToTop, setShowBackToTop] = useState(false); 
-  const [isSearchSubmitted, setIsSearchSubmitted] = useState(false); 
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isSearchSubmitted, setIsSearchSubmitted] = useState(false);
 
   // -----------------
   const handleSubmit = async (searchTerm) => {
@@ -94,6 +94,9 @@ function App() {
       >
         &#8679;
       </button>
+      <div>
+        <img src="./images/tmdb-logo.svg" alt=""></img>
+      </div>
     </div>
   );
 }

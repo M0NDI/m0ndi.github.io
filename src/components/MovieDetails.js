@@ -15,7 +15,7 @@ const MovieDetails = ({ searchedMovie }) => {
       <div className="movie-score">
         Audience score: {searchedMovie.vote_average.toFixed(1)}
       </div>
-      <Link to={`/movie/${searchedMovie.id}`}></Link>
+      <Link to={`/movie/${searchedMovie.id}`}/>
     </div>
   );
 };

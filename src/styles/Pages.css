@@ -27,6 +27,7 @@ html, body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 2rem;
+  background-color: rgb(24, 26, 27);
 }
 
 .all_movies__movie {

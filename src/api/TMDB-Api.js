@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 /* API CALLS FROM TheMovieDatabase API - https://www.themoviedb.org */
 
 /* 
@@ -8,7 +9,7 @@ import axios from "axios";
 */
 const BASE_URL = "https://api.themoviedb.org/3";
 const BEARER = process.env.REACT_APP_BEARER_TOKEN;
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.REACT_APP_MONDI_KEY;
 
 // Fetch movies based on user entered searchTerm. Return all page results.
 export const FetchMovies = async (searchTerm) => {
@@ -17,7 +18,7 @@ export const FetchMovies = async (searchTerm) => {
   let totalPages = 1;
 
   while (currentPage <= totalPages) {
-    const response = await axios.get(`${BASE_URL}/search/movie?`, {
+    const response = await axios.get(`${BASE_URL}/search/movie`, {
       headers: {
         Authorization: BEARER,
       },

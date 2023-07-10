@@ -40,11 +40,6 @@ const Upcoming = () => {
     setHoveredMovie(null);
   };
 
-  const handleResetPageNumber = () => {
-    setCurrentPage(1);
-    getUpcoming();
-  };
-
   useEffect(() => {
     getUpcoming();
   }, [currentPage]);

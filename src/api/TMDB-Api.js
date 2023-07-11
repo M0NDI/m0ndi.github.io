@@ -139,14 +139,48 @@ export const FetchTopRated = async (page) => {
   return response.data;
 };
 
+/* 
+  Fetch data about movies similar to the movie that's the main focus of the page.
+  FetchSimilarMovies to be used in SimilarMovies.js file. Returns only page 1 of 
+  results at the moment.
+*/
 export const FetchSimilarMovies = async (movieId) => {
-  const response = await axios.get(`${BASE_URL}/movie/${movieId}/similar`, {
-    headers: {
-      Authorization: BEARER,
-    },
-    params: {
-      api_key: API_KEY,
-    },
+  let results = [];
+  let currentPage = 1;
+  let totalPages = 1;
+
+  while (currentPage <= totalPages) {
+    const response = await axios.get(`${BASE_URL}/movie/${movieId}/similar`, {
+      headers: {
+        Authorization: BEARER,
+      },
+      params: {
+        api_key: API_KEY,
+        page: currentPage,
+      },
+    });
+    results.push(...response.data.results);
+    totalPages = response.data.total_pages;
+    currentPage++;
+  }
+
+  const sortedResults = results.sort((a, b) => {
+    return new Date(b.popularity) - new Date(a.popularity);
   });
-  return response.data.results;
+
+  const filteredMovies = sortedResults.filter((movie, index) => {
+    if (index === sortedResults.length - 1) {
+      // If it's the last movie, include it in the filtered list
+      return true;
+      /* 
+        API response has many duplicates so this checks if the title of the current 
+        movie is different from the next movie.
+      */
+    } else if (movie.title !== sortedResults[index + 1].title) {
+      return movie.title;
+    }
+  });
+
+  console.log(filteredMovies);
+  return filteredMovies.slice(0, 20);
 };

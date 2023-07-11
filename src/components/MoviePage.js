@@ -98,7 +98,7 @@ const MoviePage = ({ genresList }) => {
       </div>
       <div className="trailer-embed">
         <div className="overview-container">
-          <div className="overview-header">Overview</div>
+          <div className="overview-header">OVERVIEW</div>
           {movieDetails.overview ? (
             <div className="movie-overviews">{movieDetails.overview}</div>
           ) : (
@@ -121,7 +121,7 @@ const MoviePage = ({ genresList }) => {
         </div>
         {movieCast.cast && movieCast.cast.length > 0 ? (
           <>
-            <div className="cast-header">Top Cast</div>
+            <div className="cast-header">TOP CAST</div>
             <div className="actors">
               {movieCast.cast.slice(0, 6).map(
                 (member) =>

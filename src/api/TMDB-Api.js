@@ -147,9 +147,8 @@ export const FetchTopRated = async (page) => {
 export const FetchSimilarMovies = async (movieId) => {
   let results = [];
   let currentPage = 1;
-  let totalPages = 1;
 
-  while (currentPage <= totalPages) {
+  while (currentPage <= 20) {
     const response = await axios.get(`${BASE_URL}/movie/${movieId}/similar`, {
       headers: {
         Authorization: BEARER,
@@ -160,7 +159,6 @@ export const FetchSimilarMovies = async (movieId) => {
       },
     });
     results.push(...response.data.results);
-    totalPages = response.data.total_pages;
     currentPage++;
   }
 
@@ -181,6 +179,5 @@ export const FetchSimilarMovies = async (movieId) => {
     }
   });
 
-  console.log(filteredMovies);
   return filteredMovies.slice(0, 20);
 };

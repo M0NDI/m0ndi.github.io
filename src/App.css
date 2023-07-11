@@ -1,4 +1,7 @@
-
+.App {
+  background-color: rgb(24, 26, 27);
+  font-family: "Open Sans", sans-serif;
+}
 
 .back-to-top {
   position: fixed;
@@ -30,4 +33,16 @@
 
 .back-to-top:not(:hover) {
   transition-duration: 400ms;
+}
+
+@media (max-width: 1366px) {
+  .App {
+    width: 1366px;
+  }
+}
+
+@media (max-width: 653px) {
+  .App {
+    width: 1000px;
+  }
 }

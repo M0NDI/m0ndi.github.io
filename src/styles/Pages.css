@@ -7,6 +7,7 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: rgb(24, 26, 27);
+  min-width: 100%;
 }
 
 .conditional-pages {

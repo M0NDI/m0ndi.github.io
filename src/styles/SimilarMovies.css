@@ -4,15 +4,22 @@
     justify-content: space-evenly;
     flex-direction: column;
     width: 100vw;
-    margin: 1rem;
     margin-right: 2.5rem;
-    outline: 2px solid red;
+    margin-left: 2rem;
+}
+
+.similar-movies-container__loading-similar {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
 }
 
 .similar-movies {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -24,7 +31,8 @@
     text-align: center;
     width: 20rem;
     margin: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
+
 }
 
 .similar-movies__movie img {
@@ -42,4 +50,16 @@
     display: flex;
     align-items: center;
     height: 4rem;
+}
+
+@media (max-width: 653px) {
+    .similar-movies-container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .similar-movies-container {
+        width: 1300px;
+    }
 }

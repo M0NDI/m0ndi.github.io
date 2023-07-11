@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(242, 242, 242, 1) !important;
+  background-color: transparent;
   position: absolute;
-  width: 100%;
 }
 
 .mondi-logo {

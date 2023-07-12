@@ -68,6 +68,22 @@
   transition-duration: 400ms;
 }
 
+.tmdb-attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 26, 27, 0.1);
+  height: 5rem;
+  width: 25rem;
+  color: rgb(139, 205, 163);
+  font-size: medium;
+}
+
+.tmdb-attribution img {
+  width: 11rem;
+  margin-left: 2rem;
+}
+
 .back-to-top:not(:hover) {
   transition-duration: 400ms;
 }

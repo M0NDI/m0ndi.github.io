@@ -1,6 +1,11 @@
 import React from "react";
 import "../styles/BasicDetailsCard.css";
 
+
+/* 
+  Component for displaying basic details about a movie when it is hovered.
+  Hovered movie state handled in MostPopular.js, TopRated.js, Upcoming.js
+*/
 const BasicDetailsCard = ({ movie }) => {
   /* 
     shortenedOverview variable to be used in case movie overview is over 900

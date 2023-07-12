@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FetchMovieDetails } from "../api/TMDB-Api";
 import { FetchMovieCast } from "../api/TMDB-Api";
 import { FetchMovieVideos } from "../api/TMDB-Api";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import SimilarMovies from "./SimilarMovies";
 import "../styles/MoviePage.css";
 
@@ -145,10 +145,8 @@ const MoviePage = ({ genresList }) => {
             <p>Cast not available</p>
           </div>
         )}
-        <div>
-        </div>
       </div>
-      <SimilarMovies id={id}/>
+      <SimilarMovies id={id} />
     </div>
   );
 };

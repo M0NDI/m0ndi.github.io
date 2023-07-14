@@ -178,6 +178,16 @@ export const FetchSimilarMovies = async (movieId) => {
       return movie.title;
     }
   });
-
   return filteredMovies.slice(0, 20);
 };
+
+const discoverMovies = async () => {
+  const response = axios.get(`${BASE_URL}/discover/movie`, {
+    headers: {
+      Authorization: BEARER, 
+    },
+    params: {
+      // Sort options here.
+    }
+  })
+}

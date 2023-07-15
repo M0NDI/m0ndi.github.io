@@ -116,7 +116,7 @@ function App() {
       </button>
       <div className="tmdb-attribution">
         POWERED BY
-        <a href="https://www.themoviedb.org/?language=en-GB">
+        <a href="https://developer.themoviedb.org/reference/intro/getting-started">
           <img
             className="tmdb-logo"
             src={tmdbLogo}

@@ -16,7 +16,7 @@
     text-align: center;
     margin: 4rem;
     margin-bottom: 4rem;
-    color: rgb(110, 167, 157);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .similar-movies {
@@ -47,14 +47,14 @@
     text-align: center;
     font-weight: bolder;
     font-size: x-large;
-    color: rgb(110, 167, 157);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .movie__title {
     display: flex;
     align-items: center;
     height: 4rem;
-    color: rgb(110, 167, 157);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 653px) {

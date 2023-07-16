@@ -7,6 +7,14 @@ const PrevNextPage = ({
   currentPage,
   setCurrentPage,
 }) => {
+
+  /* 
+    State to be used to determine whether the page number is currently being hovered.
+    If it is then a guide saying "Click for page 1" will be shown.
+
+    E.g. if user is on /top-rated page on page 4 of results, they can click the page number
+    to go back to page 1.
+  */
   const [isPageNumberHovered, setIsPageNumberHovered] = useState(false);
 
   const handleResetPageNumber = () => {

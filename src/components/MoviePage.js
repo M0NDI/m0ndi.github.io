@@ -16,15 +16,34 @@ const MoviePage = ({ genresList }) => {
 
   const imagePath = "https://image.tmdb.org/t/p/original";
 
+  /* 
+    Check movie object returned by FetchMovieVideos in TMDB-Api.js.
+    If movieVideos.results exists then check if words in usableKeywords
+    are also found in movieVideos.results. 
+
+    If found, then assign videoKey/videoTitle the values of correctVideo.key
+    and correctVideo.name respectively from the video object that matches 
+    the firt keyword in usableKeywords.
+  */
   const usableKeywords = /Official Trailer|RedBandTrailer|Trailer/;
 
   const correctVideo =
     movieVideos.results &&
     movieVideos.results.find((video) => usableKeywords.exec(video.name));
-
   const videoKey = correctVideo ? correctVideo.key : "";
   const videoTitle = correctVideo ? correctVideo.name : "";
 
+  /* 
+    Convert minutes to hours and minutes.
+    Divide totalMinutes by 60.
+    Calculate totalMinutes modulo 60.
+
+    E.g totalMinutes = 100:
+      100 / 60 rounded down to 1 digit (Math.floor()) = 1.
+      100 modulo 60 = 40. 60 Goes into 100 once with a remainder of 40.
+      
+      Therefore 100 mins = 1 hour 40 mins.
+  */
   const toHoursAndMinutes = (totalMinutes) => {
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
@@ -119,6 +138,10 @@ const MoviePage = ({ genresList }) => {
             <p className="no-trailer">No trailer available</p>
           )}
         </div>
+        {/* 
+          If movieCase.cast exists and its length > 0 then display top cast details,
+          otherwise display "cast not available."
+        */}
         {movieCast.cast && movieCast.cast.length > 0 ? (
           <>
             <div className="cast-header">TOP CAST</div>

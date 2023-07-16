@@ -10,6 +10,7 @@ export const NavBar = ({
   setIsSearchSubmitted,
   setSearchedMoviesArr,
 }) => {
+  // If user has navigated to /movie/ then hide the search bar.
   const location = useLocation();
   const hideSearchBar = location.pathname.startsWith("/movie/");
 
@@ -40,6 +41,10 @@ export const NavBar = ({
           <NavLink
             className="home"
             to={"/"}
+            /* 
+              Change styling of nav button based on whether user is 
+              currently on that page or not.
+            */
             style={({ isActive }) =>
               isActive
                 ? {

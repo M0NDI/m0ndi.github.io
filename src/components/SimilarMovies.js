@@ -4,6 +4,13 @@ import "../styles/SimilarMovies.css";
 
 const SimilarMovies = ({ id }) => {
   const [similarMovies, setSimilarMovies] = useState([]);
+
+  /* 
+    isLoading state to be used to determine whether the getSimilarMovies
+    async function is done fetching all its data. When fetching is done,
+    isLoading will be set to false and more movies will be displayed using
+    data from getSimilarMovies.
+  */
   const [isLoading, setIsLoading] = useState(true);
 
   const imagePath = "https://image.tmdb.org/t/p/w500";
@@ -14,6 +21,7 @@ const SimilarMovies = ({ id }) => {
     setIsLoading(false);
   };
 
+  // Only call getSimilarMovies at /movie/ if id of movie changes.
   useEffect(() => {
     getSimilarMovies();
   }, [id]);

@@ -3,9 +3,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 100vw;
-    margin-right: 2.5rem;
-    margin-left: 2rem;
+    width: 95%;
+    margin: 9rem 2.5rem 0 2rem;
 }
 
 .similar-movies-container__loading-similar {
@@ -41,7 +40,7 @@
     border-radius: 1rem;
 }
 
-.similar-movies__header {
+.similar-movies-container__loading-header {
     margin-bottom: 3rem;
     text-align: center;
     font-weight: bolder;

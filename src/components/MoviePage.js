@@ -163,7 +163,7 @@ const MoviePage = () => {
             </div>
           </>
         ) : (
-          <div className="cast">
+          <div className="cast-not-available">
             <div className="cast-header">Top Cast</div>
             <p>Cast not available</p>
           </div>

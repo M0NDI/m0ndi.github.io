@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import SimilarMovies from "./SimilarMovies";
 import "../styles/MoviePage.css";
 
-const MoviePage = ({ genresList }) => {
+const MoviePage = () => {
   const [movieDetails, setMovieDetails] = useState(null);
   const [movieCast, setMovieCast] = useState([]);
   const [movieVideos, setMovieVideos] = useState([]);
@@ -169,7 +169,7 @@ const MoviePage = ({ genresList }) => {
           </div>
         )}
       </div>
-      <SimilarMovies id={id} />
+      <SimilarMovies id={id}/>
     </div>
   );
 };

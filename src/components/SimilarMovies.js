@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FetchSimilarMovies } from "../api/TMDB-Api";
 import "../styles/SimilarMovies.css";
 
@@ -21,6 +22,13 @@ const SimilarMovies = ({ id }) => {
     setIsLoading(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   // Only call getSimilarMovies at /movie/ if id of movie changes.
   useEffect(() => {
     getSimilarMovies();
@@ -37,25 +45,27 @@ const SimilarMovies = ({ id }) => {
           <div className="similar-movies__header">YOU MIGHT ALSO LIKE:</div>
           <div className="similar-movies">
             {similarMovies.map((movie) => (
-              <div className="similar-movies__movie" key={movie.id}>
-                {movie.poster_path ? (
-                  <>
-                    <div className="movie__title">{movie.title}</div>
-                    <div className="movie__release-date">
-                      {movie.release_date}
-                    </div>
+              <Link to={`/movie/${movie.id}`} onClick={scrollToTop}>
+                <div className="similar-movies__movie" key={movie.id} onClick={scrollToTop}>
+                  {movie.poster_path ? (
                     <>
-                      <img
-                        className="movie__image"
-                        src={imagePath + movie.poster_path}
-                        alt={movie.title}
-                      />
+                      <div className="movie__title">{movie.title}</div>
+                      <div className="movie__release-date">
+                        {movie.release_date}
+                      </div>
+                      <>
+                        <img
+                          className="movie__image"
+                          src={imagePath + movie.poster_path}
+                          alt={movie.title}
+                        />
+                      </>
                     </>
-                  </>
-                ) : (
-                  <></>
-                )}
-              </div>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+              </Link>
             ))}
           </div>
         </>

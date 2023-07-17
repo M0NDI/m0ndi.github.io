@@ -88,7 +88,7 @@ function App() {
               />
               <Route
                 path="/movie/:id"
-                element={<MoviePage isSearchSubmitted={isSearchSubmitted} />}
+                element={<MoviePage isSearchSubmitted={isSearchSubmitted} scrollToTop={scrollToTop}/>}
               />
             </>
           ) : (

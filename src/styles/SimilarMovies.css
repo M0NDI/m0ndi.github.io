@@ -1,10 +1,24 @@
 
+.page-divide {
+    width: 2rem;
+    outline: 2px solid rgb(67, 102, 96);
+    width: 100%;
+}
+
 .similar-movies-container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     width: 95%;
     margin: 9rem 2.5rem 0 2rem;
+}
+
+.similar-movies__header {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .similar-movies-container__loading-similar {

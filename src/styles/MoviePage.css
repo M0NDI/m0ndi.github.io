@@ -77,6 +77,46 @@
   width: 28rem;
 }
 
+/* .movie-extra-details {
+  display: flex;
+  flex-direction: column;
+} */
+
+.genres-and-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.extra-details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.production-companies-container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.production-companies-container h1 {
+  font-size: large;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-budget {
+  margin-top: 1rem;
+}
+
+.movie-revenue {
+  margin-top: 1rem;
+}
+
 .genres {
   display: flex;
   justify-content: space-evenly;

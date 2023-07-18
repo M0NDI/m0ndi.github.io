@@ -50,6 +50,7 @@ export const FetchMovieDetails = async (movieId) => {
       api_key: API_KEY,
     },
   });
+  console.log(response.data)
   return response.data;
 };
 
@@ -63,7 +64,6 @@ export const FetchMovieVideos = async (movieId) => {
       api_key: API_KEY,
     },
   });
-  console.log(response.data)
   return response.data;
 };
 

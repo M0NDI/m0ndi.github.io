@@ -36,13 +36,14 @@ const SimilarMovies = ({ id }) => {
 
   return (
     <div className="similar-movies-container">
+      <div className="page-divide"></div>
       {isLoading ? (
         <div className="similar-movies-container__loading-header">
           LOADING OTHERS YOU MIGHT LIKE...
         </div>
       ) : (
         <>
-          <div className="similar-movies-container__loading-header">YOU MIGHT ALSO LIKE:</div>
+          <div className="similar-movies__header">YOU MIGHT ALSO LIKE:</div>
           <div className="similar-movies">
             {similarMovies.map((movie) => (
               <Link to={`/movie/${movie.id}`} onClick={scrollToTop}>

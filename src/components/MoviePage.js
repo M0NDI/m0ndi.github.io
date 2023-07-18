@@ -76,7 +76,6 @@ const MoviePage = () => {
     // Render a loading state or handle the absence of movie details
     return <div className="loading">Loading...</div>;
   }
-
   if (loading) {
     return <div className="loading">Loading...</div>;
   }
@@ -96,25 +95,67 @@ const MoviePage = () => {
 
   return (
     <div className="movie-container">
-      <div className="movie-poster">
-        <h1>{movieDetails.title}</h1>
-        <h2 className="runtime">({toHoursAndMinutes(movieDetails.runtime)})</h2>
-        <h3>{movieDetails.release_date}</h3>
-        <div className="poster">
-          <div className="user-score" style={{ backgroundColor }}>
-            {movieDetails.vote_average.toFixed(1)}
-          </div>
-          <img
-            src={imagePath + movieDetails.poster_path}
-            alt={movieDetails.title}
-          />
-          <div className="genres">
-            {movieDetails.genres.map((genre) => {
-              return <div key={genre.id}>{genre.name}</div>;
-            })}
+      <>
+        <div className="movie-poster">
+          <h1>{movieDetails.title}</h1>
+          <h2 className="runtime">
+            ({toHoursAndMinutes(movieDetails.runtime)})
+          </h2>
+          <h3>{movieDetails.release_date}</h3>
+          <div className="poster">
+            <div className="user-score" style={{ backgroundColor }}>
+              {movieDetails.vote_average.toFixed(1)}
+            </div>
+            <img
+              src={imagePath + movieDetails.poster_path}
+              alt={movieDetails.title}
+            />
+            <div className="genres-and-details">
+              <div class="genres">
+                {movieDetails.genres.map((genre) => {
+                  return <div key={genre.id}>{genre.name}</div>;
+                })}
+              </div>
+              <div className="extra-details">
+                <div className="production-companies-container">
+                  <h1>Production companies:</h1>
+                  <div class="companies">
+                    {movieDetails.production_companies.map((company) => {
+                      return <div className="company">{company.name}</div>;
+                    })}
+                  </div>
+                  <div class="movie-budget">
+                    {movieDetails.budget > 0 ? (
+                      <>
+                        <h1>Budget:</h1>
+                        <div>${movieDetails.budget.toLocaleString()}</div>
+                      </>
+                    ) : (
+                      <>
+                        <h1>Budget:</h1>
+                        <p>Unknown</p>
+                      </>
+                    )}
+                  </div>
+                  <div class="movie-revenue">
+                    {movieDetails.revenue > 0 ? (
+                      <>
+                        <h1>Revenue:</h1>
+                        <div>${movieDetails.revenue.toLocaleString()}</div>
+                      </>
+                    ) : (
+                      <>
+                        <h1>Revenue:</h1>
+                        <p>Unknown</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </>
       <div className="trailer-embed">
         <div className="overview-container">
           <div className="overview-header">OVERVIEW</div>
@@ -139,7 +180,7 @@ const MoviePage = () => {
           )}
         </div>
         {/* 
-          If movieCase.cast exists and its length > 0 then display top cast details,
+          If movieCast.cast exists and its length > 0 then display top cast details,
           otherwise display "cast not available."
         */}
         {movieCast.cast && movieCast.cast.length > 0 ? (
@@ -169,7 +210,7 @@ const MoviePage = () => {
           </div>
         )}
       </div>
-      <SimilarMovies id={id}/>
+      <SimilarMovies id={id} />
     </div>
   );
 };

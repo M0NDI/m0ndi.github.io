@@ -82,7 +82,7 @@ const MoviePage = () => {
 
   /* 
     backgroundColor variable to control the background color of movie audience score 
-    on movie page (/movie/id) based on rating. 0-5 = red, 5-7.9 = orange, 8-10 = green 
+    on movie page (/movie/id) based on rating. 0-5 = red, 5-6.9 = orange, 7-10 = green 
   */
   let backgroundColor;
   if (movieDetails.vote_average >= 7) {

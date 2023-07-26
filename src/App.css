@@ -11,8 +11,6 @@
   background-color: rgb(67, 102, 96);
   color: #fff;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
   text-align: center;
   font-size: 24px;
   cursor: pointer;
@@ -31,10 +29,6 @@
   transition-duration: 400ms;
 }
 
-.back-to-top:not(:hover) {
-  transition-duration: 400ms;
-}
-
 .App {
   background-color: rgb(24, 26, 27);
   font-family: "Open Sans", sans-serif;
@@ -48,8 +42,8 @@
   background-color: rgb(67, 102, 96);
   color: #fff;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 7rem;
+  height: 7rem;
   text-align: center;
   font-size: 24px;
   cursor: pointer;
@@ -92,10 +86,18 @@
   .App {
     width: 1366px;
   }
+  .back-to-top {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 @media (max-width: 653px) {
   .App {
     width: 1000px;
+  }
+  .back-to-top {
+    width: 10rem;
+    height: 10rem;
   }
 }

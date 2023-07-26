@@ -7,7 +7,6 @@ const PrevNextPage = ({
   currentPage,
   setCurrentPage,
 }) => {
-
   /* 
     State to be used to determine whether the page number is currently being hovered.
     If it is then a guide saying "Click for page 1" will be shown.
@@ -42,7 +41,9 @@ const PrevNextPage = ({
           onClick={handleResetPageNumber}
         >
           <div className="page-number__hover-guide">
-            {isPageNumberHovered ? <div className="guide">Click for page 1</div> : null}
+            {isPageNumberHovered ? (
+              <div className="guide">Click for page 1</div>
+            ) : null}
           </div>
           {currentPage}
         </button>

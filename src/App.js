@@ -65,11 +65,14 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar
-        onSubmit={handleSubmit}
-        setIsSearchSubmitted={setIsSearchSubmitted}
-        setSearchedMoviesArr={setSearchedMoviesArr}
-      />
+      <header>
+        <NavBar
+          onSubmit={handleSubmit}
+          setIsSearchSubmitted={setIsSearchSubmitted}
+          setSearchedMoviesArr={setSearchedMoviesArr}
+        />
+      </header>
+
       <div id="routes">
         <Routes>
           {isSearchSubmitted ? (
@@ -88,7 +91,12 @@ function App() {
               />
               <Route
                 path="/movie/:id"
-                element={<MoviePage isSearchSubmitted={isSearchSubmitted} scrollToTop={scrollToTop}/>}
+                element={
+                  <MoviePage
+                    isSearchSubmitted={isSearchSubmitted}
+                    scrollToTop={scrollToTop}
+                  />
+                }
               />
             </>
           ) : (
@@ -114,16 +122,18 @@ function App() {
       >
         &#8679; {/* UTF-8 code for an upwards arrow */}
       </button>
-      <div className="tmdb-attribution">
-        POWERED BY
-        <a href="https://developer.themoviedb.org/reference/intro/getting-started">
-          <img
-            className="tmdb-logo"
-            src={tmdbLogo}
-            alt="the movie database logo"
-          />{" "}
-        </a>
-      </div>
+      <footer>
+        <div className="tmdb-attribution">
+          POWERED BY
+          <a href="https://developer.themoviedb.org/reference/intro/getting-started">
+            <img
+              className="tmdb-logo"
+              src={tmdbLogo}
+              alt="the movie database logo"
+            />{" "}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

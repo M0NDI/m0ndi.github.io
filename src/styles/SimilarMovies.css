@@ -54,6 +54,10 @@
     border-radius: 1rem;
 }
 
+.similar-movies__movie img:hover {
+    outline: 4px solid rgb(67, 102, 96);
+}
+
 .similar-movies-container__loading-header {
     margin-bottom: 3rem;
     text-align: center;

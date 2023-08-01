@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/BasicDetailsCard.css";
 
-
 /* 
   Component for displaying basic details about a movie when it is hovered.
   Hovered movie state handled in MostPopular.js, TopRated.js, Upcoming.js

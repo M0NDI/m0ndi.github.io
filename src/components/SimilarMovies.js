@@ -47,7 +47,11 @@ const SimilarMovies = ({ id }) => {
           <div className="similar-movies">
             {similarMovies.map((movie) => (
               <Link to={`/movie/${movie.id}`} onClick={scrollToTop}>
-                <div className="similar-movies__movie" key={movie.id} onClick={scrollToTop}>
+                <div
+                  className="similar-movies__movie"
+                  key={movie.id}
+                  onClick={scrollToTop}
+                >
                   {movie.poster_path ? (
                     <>
                       <div className="movie__title">{movie.title}</div>

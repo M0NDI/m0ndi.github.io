@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mondi-movie-app/static/css/main.ea6de5e1.css",
+    "main.css": "/mondi-movie-app/static/css/main.8a0d943b.css",
     "main.js": "/mondi-movie-app/static/js/main.1b78c9ed.js",
     "static/media/mondi-logo-white-outline.png": "/mondi-movie-app/static/media/mondi-logo-white-outline.2c3a3187ae8f6f6b1899.png",
     "static/media/tmdb-logo.svg": "/mondi-movie-app/static/media/tmdb-logo.caee745762db3e030d38ebb5a167ae05.svg",
     "index.html": "/mondi-movie-app/index.html",
-    "main.ea6de5e1.css.map": "/mondi-movie-app/static/css/main.ea6de5e1.css.map",
+    "main.8a0d943b.css.map": "/mondi-movie-app/static/css/main.8a0d943b.css.map",
     "main.1b78c9ed.js.map": "/mondi-movie-app/static/js/main.1b78c9ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea6de5e1.css",
+    "static/css/main.8a0d943b.css",
     "static/js/main.1b78c9ed.js"
   ]
 }

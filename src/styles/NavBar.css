@@ -3,7 +3,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  position: absolute;
+  position: fixed !important; 
+  top: 0 !important; 
+  width: 100% !important;
 }
 
 .mondi-logo {

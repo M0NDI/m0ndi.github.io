@@ -8,6 +8,7 @@ html, body {
   align-items: center;
   background-color: rgb(24, 26, 27);
   min-width: 100%;
+  margin-top: 6rem;
 }
 
 .conditional-pages {

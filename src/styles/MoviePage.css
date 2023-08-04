@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   min-width: 100vh;
   min-height: 100vh;
+  margin-top: 3rem;
   background-color: rgb(24, 26, 27);
   color: rgba(255, 255, 255, 0.7);
 }

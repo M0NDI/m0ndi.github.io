@@ -113,7 +113,7 @@ const MoviePage = () => {
             <div className="genres-and-details">
               <div class="genres">
                 {movieDetails.genres.map((genre) => {
-                  return <div key={genre.id}>{genre.name}</div>;
+                  return <div className="genre-name" key={genre.id}>{genre.name}</div>;
                 })}
               </div>
               <div className="extra-details">

@@ -120,8 +120,14 @@
 
 .genres {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 27rem;
+  justify-content: space-between;
   margin: 0.5rem;
+}
+
+.genre-name {
+  margin-right: 1rem;
 }
 
 .actors {

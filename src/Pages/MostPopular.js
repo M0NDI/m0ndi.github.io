@@ -61,12 +61,11 @@ const MostPopular = () => {
 
   return (
     <div className="page-container">
-      <div className="all_movies">
+      <div className="all-movies">
         {popular.results?.map(
           (movie) =>
             movie.poster_path && (
-              <div className="all_movies__movie" key={movie.id}>
-                <div className="all_movies__movie" key={movie.id}>
+                <div className="all-movies__movie" key={movie.id}>
                   <div
                     className="movie-image"
                     onMouseEnter={() => handleMouseEnter(movie)}
@@ -96,7 +95,6 @@ const MostPopular = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
             )
         )}
       </div>

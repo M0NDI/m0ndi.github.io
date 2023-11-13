@@ -1,8 +1,9 @@
 
 .page-divide {
+    margin: auto;
     width: 2rem;
     outline: 2px solid rgb(67, 102, 96);
-    width: 100%;
+    width: 95vw;
 }
 
 .similar-movies-container {

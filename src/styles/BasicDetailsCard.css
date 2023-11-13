@@ -1,8 +1,8 @@
 .basic-details-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   position: absolute;
   text-align: center;
   height: 30rem;
@@ -11,7 +11,6 @@
   font-weight: bolder;
   font-size: smaller;
   padding: 0.5rem;
-  border-radius: 1rem;
 }
 
 .basic-details-card__title {

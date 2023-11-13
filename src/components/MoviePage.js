@@ -28,8 +28,7 @@ const MoviePage = () => {
   const usableKeywords = /Official Trailer|RedBandTrailer|Trailer/;
 
   const correctVideo =
-    movieVideos.results &&
-    movieVideos.results.find((video) => usableKeywords.exec(video.name));
+    movieVideos.results && movieVideos.results.find((video) => usableKeywords.exec(video.name));
   const videoKey = correctVideo ? correctVideo.key : "";
   const videoTitle = correctVideo ? correctVideo.name : "";
 
@@ -98,22 +97,21 @@ const MoviePage = () => {
       <>
         <div className="movie-poster">
           <h1>{movieDetails.title}</h1>
-          <h2 className="runtime">
-            ({toHoursAndMinutes(movieDetails.runtime)})
-          </h2>
+          <h2 className="runtime">({toHoursAndMinutes(movieDetails.runtime)})</h2>
           <h3>{movieDetails.release_date}</h3>
           <div className="poster">
             <div className="user-score" style={{ backgroundColor }}>
               {movieDetails.vote_average.toFixed(1)}
             </div>
-            <img
-              src={imagePath + movieDetails.poster_path}
-              alt={movieDetails.title}
-            />
+            <img src={imagePath + movieDetails.poster_path} alt={movieDetails.title} />
             <div className="genres-and-details">
               <div class="genres">
                 {movieDetails.genres.map((genre) => {
-                  return <div className="genre-name" key={genre.id}>{genre.name}</div>;
+                  return (
+                    <div className="genre-name" key={genre.id}>
+                      {genre.name}
+                    </div>
+                  );
                 })}
               </div>
               <div className="extra-details">
@@ -184,7 +182,7 @@ const MoviePage = () => {
           otherwise display "cast not available."
         */}
         {movieCast.cast && movieCast.cast.length > 0 ? (
-          <>
+          <div className="movie-cast">
             <div className="cast-header">TOP CAST</div>
             <div className="actors">
               {movieCast.cast.slice(0, 6).map(
@@ -202,7 +200,7 @@ const MoviePage = () => {
                   )
               )}
             </div>
-          </>
+          </div>
         ) : (
           <div className="cast-not-available">
             <div className="cast-header">Top Cast</div>

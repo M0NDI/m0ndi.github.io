@@ -194,6 +194,10 @@
   margin-top: 5rem;
 }
 
+.movie-cast {
+  padding-left: 3.5rem;
+}
+
 .cast-header {
   display: flex;
   justify-content: center;

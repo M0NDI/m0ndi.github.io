@@ -7,9 +7,19 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: rgb(24, 26, 27);
-  min-width: 100%;
   margin-top: 6rem;
+  width: 100%;
 }
+
+.all-movies { 
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  background-color: rgb(24, 26, 27);
+  width: 100%;
+}
+
 
 .conditional-pages {
   display: flex;
@@ -24,19 +34,11 @@ html, body {
   margin: 0.5rem;
 }
 
-.all_movies { 
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  background-color: rgb(24, 26, 27);
-}
-
-.all_movies__movie {
+.all-movies__movie {
   height: 100%;
 }
 
-.all_movies__movie img {
+.all-movies__movie img {
   border-radius: 1rem;
   margin-top: 1rem;
   margin-bottom: 2.5rem;

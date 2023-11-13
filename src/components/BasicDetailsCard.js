@@ -11,7 +11,7 @@ const BasicDetailsCard = ({ movie }) => {
     characters. This is to keep the overview contained within the movie card.
   */
   const shortenedOverview = `${movie.overview.substring(0, 800) + " ..."}`;
-
+  
   return (
     <div className="basic-details-card">
       <h1 className="basic-details-card__title">{movie.title}</h1>
@@ -25,7 +25,7 @@ const BasicDetailsCard = ({ movie }) => {
         {movie.overview.length > 800 ? shortenedOverview : movie.overview}
       </div>
       <div className="basic-details-card__movie-score">
-        Audience score: {movie.vote_average} / 10
+        Audience score: {movie.vote_average.toFixed(1)}
       </div>
     </div>
   );

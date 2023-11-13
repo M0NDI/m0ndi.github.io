@@ -59,12 +59,11 @@ const Upcoming = () => {
 
   return (
     <div className="page-container">
-      <div className="all_movies">
+      <div className="all-movies">
         {upcoming.results?.map(
           (movie) =>
             movie.poster_path && (
-              <div className="all_movies__movie" key={movie.id}>
-                <div className="all_movies__movie" key={movie.id}>
+                <div className="all-movies__movie" key={movie.id}>
                   <div
                     className="movie-image"
                     onMouseEnter={() => handleMouseEnter(movie)}
@@ -94,7 +93,6 @@ const Upcoming = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
             )
         )}
       </div>

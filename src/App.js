@@ -94,7 +94,6 @@ function App() {
                 element={
                   <MoviePage
                     isSearchSubmitted={isSearchSubmitted}
-                    scrollToTop={scrollToTop}
                   />
                 }
               />
